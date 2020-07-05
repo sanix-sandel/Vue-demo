@@ -1,12 +1,12 @@
 <template>
-    <li class="movie>
+    <li class="movie">
         {{movie.title}}
     </li>
 </template>
 
 <script>
 export default{
-    props:['movie],
+    props:['movie'],
 
 }
 </script>
