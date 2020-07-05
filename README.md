@@ -26,3 +26,23 @@ The markdown will be previewed in real time
 The users will be able to add as many notes as they want
 The notes will be restored the next time the user visits the app
 >>>>>>> 4be24ef711da10dcc70568a652245e123bfa64ac
+
+To update a package manually, open the package.json file and locate the corresponding
+line. Change the version range and save the file. Then, run this command to apply the
+changes:
+npm install
+
+To check whether there are new versions available of the packages used in the project, run
+this command in the root folder:
+npm outdated
+
+the Babel polyfills to use new JavaScript features in older browsers.
+1. Install the babel-polyfill package in your dev dependencies:
+npm i -D babel-polyfill
+2. Import it at the beginning of the src/main.js file:
+import 'babel-polyfill'
+
+We will now install and use the babel-preset-vue in the Babel configuration of our app.
+1. So first, we need to install this new preset in the dev dependencies:
+npm i -D babel-preset-vue
+

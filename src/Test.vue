@@ -1,5 +1,7 @@
 <template>
+    
     <div>
+        <h1 class="title"> Hello </h1>
         <p>{{ message }}</p>
         <input v-model="message"/>
     </div>
@@ -15,7 +17,8 @@ export default {
 }
 
 </script>
-<style>
+<style scoped>
+
 p {
     color: grey;
 }
